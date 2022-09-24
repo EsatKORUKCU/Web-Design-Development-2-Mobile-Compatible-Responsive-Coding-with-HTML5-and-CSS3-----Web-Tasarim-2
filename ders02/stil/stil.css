@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document 
+
+.baslik   → Class
+#menu  → ID
+h1         → html etiketi
+*/
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+.menu{
+	padding-left: 500px;
+	height: 100px;
+	line-height: 100px;
+	background-color: aliceblue;
+	width: 1000px;
+	margin: -8px auto; 
+	text-align: center;
+}
+
+.menu span{
+	background-color: antiquewhite;
+	color: blue;
+	width: 100px;
+	display: block;
+	float: left;
+}
+
+
+footer{
+	height: 250px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	background-color: blue;
+	color: snow;
+	padding-top: 40px;
+	font-family: 'Tapestry', cursive;
+	font-size: 20px;
+}
+
+.liste{
+	height: 150px;
+	width: 300px;
+	text-align: left;
+	margin: 0 auto;
+	
+}
+.liste ul li{list-style:none;} /*liste içindeki herbir list itemin kare yap*/
+
+
+
+.gallery {
+  background: #EEE;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+/* collap özelligi*/
+.collapsible
+{
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  border: thin solid black;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: maroon;
+}
+
+.content {
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+details{
+	border: thin solid black;
+	
+}
+
+/*margin : kenat boşlugu:Birirnci deger üsr ve alt degeridir.ikinci deger sag ve sol degeridir.
+padding: iç kenar boşlugu:
+*/
+
+
+
+
+
+
+
+
+
