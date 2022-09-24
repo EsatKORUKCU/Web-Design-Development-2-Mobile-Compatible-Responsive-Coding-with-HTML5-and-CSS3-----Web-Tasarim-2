@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobianna klonlama</title>
+    <link rel="stylesheet" href="stil/stil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
+</head>
+<body>
+    <div class="enUst">
+        <header>
+            <div class="bolum1">
+                 <div class="bolum1_Sol">
+                     Herkes Harika El İşi Yapsın Diye!200₺ ve Üzeri Alışverişlerde ÜCRETSİZ KARGO &emsp;|&emsp;Kapıda Ödeme&emsp;| &emsp;   Kredi Kartı İle Taksit İmkanı 
+                 </div>
+                 <div class="bolum1_Sag">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-telegram"></i>
+                 </div>   
+            </div>
+            <div class="logo">
+                 <div class="logo_Sol">
+                    <img src="img/logo.png" alt="">
+                 </div>
+                 <div class="logo_Orta">
+                    <form>
+                        <input type="text" name="" placeholder="Hangi ürünü arıyordunuz?" title="Arama Kriteri Yazınız" id="txt_arama"><br>
+                        <input type="submit" value="Gönder">
+                        <!-- value: textbox içindeki yazan değerdir
+                        placeholder: textbox içerik yazılmadan önceki içindeki silinebilen bilgidir -->
+                    </form>
+                 </div>
+                 <div class="logo_Sag">
+                    <div class="modal-overlay" id="modal-overlay"></div>
+                    <div class="modal" id="modal">
+                        <button class="close-button" id="close-button">X</button>
+                        <div class="modal-guts">
+                          <h2>Giriş Yap<i>Hesap Oluştur</i></h2> <hr>
+                          <div class="form">
+                            <form>   
+                                <label>Kullanıcı Adı veya E-Posta Adresi *</label><br>
+                                <input type="text" required name="kullanici" placeholder="Kullanıcı Adı veya E-Posta Adresi"> <br>
+                                <label>Şifre *</label><br>
+                                <input type="password" name="sifre" required> <br>
+                                <input type="button" value="GİRİŞ"> <br>
+                                <input type="checkbox" id="beniHatirla" value="hatirla">
+                                <label for="beniHatirla">Beni Hatırla</label> &emsp;
+                                <a href="javascript:void(0)">Şifreni mi unuttun?</a>
+                            </form>
+                          </div>
+                          
+                          
+                        </div>
+                    </div>
+                   <p>
+                        <i class="fa-solid fa-circle-user"></i>
+                        <a href="javascript:void(0)" id="open-button" class="open-button">GİRİŞ / KAYIT</a>&emsp;
+                        <i class="fa-solid fa-cart-arrow-down"></i> 
+                        ₺ <input type="button" id="sonuc" value="0">
+                        <input type="button" onclick="artir()" value="+">
+                        <input type="button" onclick="azalt()" value="-">
+                    </p> 
+                 </div>
+
+            </div>
+        </header>
+        <section>
+          <nav>
+            <!-- Menu Ekleme Etiketi -->
+            <ul>
+                <li><a href="#">KİTLER, ŞABLONLAR</a></li>
+                <li><a href="#">ETAMİN VE KUMAŞLAR</a></li>
+                <li><a href="#">KASNAKLAR</a></li>
+                <li><a href="#">İPLİKLER</a></li>
+                <li><a href="#">İĞNE VE İĞNELİKLER</a></li>
+                <li><a href="#">DERGİ VE KİTAPLAR</a></li>
+                <li><a href="#">aksesuarlar</a></li>
+                <li><a href="#">ARAÇ GEREÇLER</a></li>
+            </ul>
+        </nav>  
+        </section><br><br><br>
+
+        <section class="gallery js-flickity">
+           
+            
+            <a href="gallery-cell">
+                 <img src="img/img01.PNG" alt="gallery-cell"></a>
+            <a href="gallery-cell">
+                     <img src="img/img02.PNG" alt="gallery-cell"></a>
+            <a href="gallery-cell">
+                    <img src="img/img03.PNG" alt="gallery-cell"></a>
+                    <a href="gallery-cell">
+                        <img src="img/img04.PNG" alt="gallery-cell"></a>
+               
+            
+        </section> 
+
+        <section class="kategoriler">
+            <div class="kategoriBaslik">
+                <h2>EN POPÜLER KATEGORİLER</h2>
+                <h5>Çok sevilen kategorileri sizler için aşağıda derledik.</h5>
+            </div>
+            <div class="kategori_Sol">
+                <img src="img/k01.png" alt="">
+                <p>kanaviçe nakış kitleri <br> <i>105 Ürün</i> </p>
+                   
+            </div>
+            <div class="kategori_Sag">
+                <div class="kategori_Sag_Ust">
+                    <img src="img/k02.png" alt="">
+                    <img src="img/k03.png" alt="">  
+                </div>
+                <div class="kategori_Sag_Alt">
+                    <img src="img/k04.png" alt="">
+                    <img src="img/k05.png" alt="">
+                </div>
+                
+            </div>
+        </section>
+
+
+    </div>
+
+
+<script src="javascript/javascript.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+</body>
+</html>

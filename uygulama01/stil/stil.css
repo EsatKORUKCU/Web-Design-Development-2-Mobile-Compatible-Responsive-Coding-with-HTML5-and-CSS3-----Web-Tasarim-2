@@ -1,0 +1,296 @@
+/*burası stil dosyasıdır*/
+body{
+    background-image: url(../img/bg.jpg);
+    background-attachment:fixed;
+}
+.enUst{
+    height: 2000px;
+    width: 1200px;
+    margin: 0 auto;
+  margin-top: 10px;
+    font-family: "Calibri";
+}
+
+header{
+    height: 150px;
+    background-color: white;
+    padding: 0px 0px 10px 0px;
+  
+}
+
+.bolum1{
+    height: 40px;
+    background-color: #debbb5;
+    color: black;
+    font-size: 14px;
+    line-height: 40px;/* Satır yüksekliği satırlar arası boşluk*/
+     
+}
+.bolum1_Sol{
+    width: 1000px;
+    float: left;
+}
+.bolum1_Sag{
+    width: 200px;
+    float: left;
+    letter-spacing: 5px; /*iki karakter arası boşluğu belirler*/
+}
+.logo{
+    padding: 6px 10px;
+    width: 1200px;
+    height: 105px;
+    float: left;
+}
+.logo_Sol{
+    width: 270px;
+    height: 105px;
+    float: left;
+}
+.logo_Sol img{
+    margin: 7px 25px;
+    box-shadow: 5px 4px 20px rgba(255, 192, 203, 0.5);
+    border-radius: 5px 10px 15px 20px; /*dörtgen kenar yuvarlatma*/
+}
+.logo_Orta{
+    float: left;
+    width: 660px;
+    height: 105px;
+    /* background-color: antiquewhite; */
+    text-align: center;
+}
+#txt_arama{
+    margin: 10px;
+    height: 30px;
+    width: 200px;
+    padding: 5px;
+    padding-left: 10px;
+    text-align: center;
+    transition: width .4s ease-out; /*geçiş efekti veriyoruz*/
+}
+#txt_arama:focus{
+    width: 650px;
+}
+.logo_Sag{
+    float: left;
+    width: 260px;
+    height: 105px; 
+    /* background-color: aquamarine; */
+    margin-top: 10px;
+}
+.logo_Sag p{
+    padding: 7px 20px;
+    font-size: 15px;
+}
+
+#btn_Gonder, .logo_Sag input {
+    background-color:ghostwhite ;
+    border: solid thin gray;
+    height: 25px;
+    border-radius: 3px;
+}
+#btn_Gonder:active, .logo_Sag input:active{
+    background-color: gainsboro;
+}
+
+#sonuc{
+    width: 20px;
+    height: 20px;
+    border:dotted thin #debbb5;
+    background-color: transparent;
+    text-align: center;
+}
+
+
+/* --------------- Modal Kullanımı ---------*/
+
+.modal {
+    display: block;
+    background-color: bisque;
+    width: 600px;
+    max-width: 100%; 
+    height: 400px;
+    max-height: 100%; 
+    position: fixed;
+    z-index: 100;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    box-shadow: 0 0 60px 10px rgba(231, 189, 189, 0.9);
+  }
+  .closed {
+    display: none;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    
+    background: rgba(0, 0, 0, 0.6);
+  }
+  .modal-guts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 20px 50px 20px 0;
+  }
+
+  .modal .close-button {
+    position: absolute;
+    
+    /* don't need to go crazy with z-index here, just sits over .modal-guts */
+    z-index: 1;
+    
+    top: 10px;
+    
+    /* needs to look OK with or without scrollbar */
+    right: 20px;   
+    border: 0;
+    background: black;
+    color: white;
+    padding: 5px 10px;
+  }
+
+.modal-guts i{
+    float: right; 
+    padding-right:50px;
+    color: #debbb5;
+    font-size: 16px;
+}
+.modal-guts h2{
+    padding-left: 50px;
+}
+.form{
+    width: 80%;
+    height: 60%;
+    margin: 10px auto;
+    text-align: center;
+}
+.form input, .form label{
+    margin: 10px 0;
+    width: 75%;
+}
+.form input[type="checkbox"]{
+    width: 50px;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}  
+nav ul li{
+    list-style: none;
+    line-height: 40px;
+    height: 40px;
+    width: 150px;
+    float: left;
+    text-align: center;
+    transition: all .4s ease-out;
+    background-image: none;
+    background-color: #debbb5;
+    padding: 9px 0px 8PX 0px;
+    
+}
+nav ul li:hover{
+    background-image: linear-gradient(#debbb5, #f2e2df);
+    border-radius: 10px;
+ }
+ nav ul li a{
+     color: black;
+     text-decoration: none; /*alt çizgi stili*/
+     display: block;
+     text-transform: uppercase; /*Menü içinde tüm yazılar büyük olsun*/
+     font-size: 14px;
+     font-weight: bolder;
+ }
+ 
+ /* --------------------- Carousel Bölümü ------------------- */
+.gallery {
+  background: white;
+
+}
+
+.gallery-cell   {	
+  width: 100%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.kategoriler{
+    height: 600px;
+    width: 100%;
+    float: left;
+    background-color: bisque;
+    margin-top: 20px;
+}
+.kategoriBaslik{
+    text-align: center; 
+    height: 80px; 
+}
+.kategori_Sol{
+    height: 500px;
+    width: 590px;
+    background-color: aqua;
+    float: left;
+    text-align: center;
+}
+.kategori_Sol img{
+    margin: 25px;
+    height: 90%;
+    width: 90%;
+    transition: all .3s ease-out; 
+}
+
+.kategori_Sol img:hover,
+.kategori_Sag_Ust img:hover, 
+.kategori_Sag_Alt img:hover   
+{
+    transform: scale(1.112);
+    filter: grayscale(100%);
+}
+.kategori_Sol p{
+    text-transform: uppercase;
+    font-size: 35px;
+    text-align: center;
+    margin-top: -250px;
+    font-weight: 700;
+}
+.kategori_Sol i{
+    font-size: 20px;
+    font-style: normal;
+}
+
+.kategori_Sag{
+    height: 500px;
+    width: 590px;
+    background-color: aqua;
+    float: right;
+}
+.kategori_Sag_Ust, .kategori_Sag_Alt{
+    float: left;
+}
+.kategori_Sag_Ust img, .kategori_Sag_Alt img{ 
+    width: 260px;
+    height: 220px;
+    margin: 15px;
+    float: left;
+    transition: all .3s ease-out;
+}

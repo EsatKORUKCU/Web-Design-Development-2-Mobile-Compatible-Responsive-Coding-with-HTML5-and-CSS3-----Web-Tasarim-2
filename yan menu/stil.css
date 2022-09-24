@@ -1,0 +1,82 @@
+#yanMenu a{
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    padding-right: 30px ;
+    
+    margin-bottom: 10px;
+    
+    text-decoration: none;
+    color: white;
+    /*
+    display: block;
+    margin-left: -100px;
+    */
+    text-align: right;
+    transition: all .3s ease-in;
+    border-radius: 0 7px 7px 0;
+    position: fixed;
+    left:-100px;
+
+}  
+
+#yanMenu a:hover{
+    left: 0;
+}
+.facebook{
+    top: 50px;
+    background-color: #1877f2;
+}
+.Twitter{
+    top: 100px;
+    background-color: #1d9bf0;
+}
+.İnstagram{
+    top: 150px;
+    background-color: #f04d30;
+}
+
+.YouTube{
+    top: 200px;
+    background-color: red;
+}
+.Linkedin{
+    top: 250px;
+    background-color: blue;
+}
+
+#yanmenu a p{
+    visibility: hidden;
+}
+#yanmenu a:hover > p{
+    visibility: visible;
+}
+.flip-card{
+    float: left;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-out;
+
+}
+.flip-card:hover{
+    transform: rotateY(180deg);
+
+}
+.flip-card img{
+    width: 100%;
+    height: 100%;
+}
+.on-flip, .arka-flip{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;/*Eski kromlarda çalışma*/
+     backface-visibility: hidden;
+}
+.arka-flip {
+    background-color: #1877f2;
+    color: #f04d30;
+    transform: rotateY(180deg);
+}
