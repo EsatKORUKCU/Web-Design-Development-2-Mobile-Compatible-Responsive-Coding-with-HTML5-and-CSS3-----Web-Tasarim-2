@@ -1,0 +1,106 @@
+
+
+html{
+    scroll-behavior: smooth;
+}
+.kutu, .container,
+ .containerUrunler, .containeriletisim{
+    width: 100%;
+    background-color: bisque;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.containerUrunler{
+    justify-content: start;
+}
+.containeriletisim div{
+    max-width: 30%;
+   padding: 10px;
+}
+.eleman{
+    width: 100px; 
+    padding: 10px;
+    background-color: #ababab;
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+}
+.eleman a{
+    text-decoration: none;   
+    color: white;
+}
+.eleman a:active{
+    color: #acacac;
+}
+.kutuHakkimda{
+    padding: 15px;
+}
+.usteGit{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    background-color: brown;
+    font-size: 30px;
+    border-radius: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: 25px;
+}
+.usteGit a{ color: white; }
+
+.urunler img{
+    float: left;
+    margin: 20px;
+    transition: all .4s ease-out;
+}
+.urunler img:hover{
+    border-radius: 100%;
+}
+.sosyalMedya ul{
+    margin: 10px 0;
+    padding: 0;
+    
+}
+.sosyalMedya ul li{
+    list-style: none;
+    font-size: 20px;
+}
+.sosyalMedya ul li a{ text-decoration: none;}
+
+.facebook{color: #1877f2;}
+.limkedin{color: #0a66c2;}
+.Twitter{color: #1d9bf0;}
+.Youtube{color: #d7050c;}
+.Whatsapp{color: #17970e;}
+
+@media all and (max-width:576px) {
+    .kutu{
+        flex-direction: column !important;
+    }
+    .eleman{
+        width: 95%;
+        margin: 0;
+        border-bottom: 1px solid black; /* Bütün elemanların altına çizgi ekler*/
+    }
+    .eleman:hover{
+        background-color: #bbbbbb;
+    }
+    .eleman:last-child{
+        border-bottom: none; /* eleman clasının son nesnesinin altındaki çizgiyi kaldır */
+    }
+    #hakkimda h2{ text-align: center; }
+    .urunler img{
+        float: none; }
+
+}
+
+
+@media all and (max-width:365px) {
+    .eleman{
+        width: 85%; 
+    }
+}

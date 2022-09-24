@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: #f3f3f3;
+    padding: 15px;
+    display: flex;   /* flex olasına sağlayan komut */
+    flex-direction: row; /* yönlendirme satır veya sürun olarak ayarlanabilir sonuna reverse eklenirse tersine çevriliyor */
+    flex-wrap: wrap; /* container kutusuna sığdırmayı sağlayan özellik */
+    justify-content: center; /* kutuları ortalamayı sağlıyor */ 
+}
+.item{
+    padding: 15px;
+    background-color: aquamarine;
+    margin: 10px;
+    font-size: 25px;
+}
+
